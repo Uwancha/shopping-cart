@@ -4,12 +4,17 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import ErrorPage from './components/ErrorPage.jsx'
+import Home from './components/Home.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [
+      {index: true, element: <Home />}
+      
+    ]
   }
 ])
 
