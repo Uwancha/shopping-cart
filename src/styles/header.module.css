@@ -1,7 +1,12 @@
-.nav {
+.header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    width: 100%;
+    padding: 0 6rem;
+
+    background-color: #4ea6bc;
+    color: #fff;
 }
 
 .links {
@@ -10,8 +15,8 @@
     flex: 2;
     gap: 2rem;
 
-    background-color: black;
-    color: goldenrod;
+    background-color: #fff;
+    color: #4ea6bc;
     padding: 2rem;
     border-radius: 8px;
 }
