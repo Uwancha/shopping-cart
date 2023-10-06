@@ -1,22 +1,23 @@
 import React from "react";
-import cartIcon from "../assets/carts_891462.png"
+import cartIcon from "../assets/carts_891462.png";
+import styles from "../styles/home.module.css";
 
 function Home() {
     return (
-        <div>
-            <div>
+        <div className={styles.home}>
+            <div className={styles.message}>
                 <div>
-                    <h4>Welcome! Happy Shopping</h4>
-                    <p>You know you can shop anything here!</p>
-                    <p>Well, actually no. This is a demo!</p>
+                    <h2 className={styles.h2}>Welcome! Happy Shopping</h2>
+                    <p className={styles.p}>You know you can buy anything here! Well, actually No! This is a Demo!</p>
+                    <p className={styles.p}> But you know what, You don't know what you don't know</p>
                 </div>
-                <div>
-                    <h5>50$ credit when you first register</h5>
-                    <button>Sign Up</button>
+                <div className={styles.callToaction}>
+                    <p className={styles.ctaMessage }>50$ credit when you first register</p>
+                    <button className={styles.button}>Sign Up</button>
                 </div>
             </div>
-            <div>
-                <img src={cartIcon} alt="shopping cart. Icon by Pixel Perfect." />
+            <div className={styles.imageContainer}>
+                <img src={cartIcon} className={styles.img} alt="shopping cart. Icon by Pixel Perfect." />
             </div>
         </div>
     )
