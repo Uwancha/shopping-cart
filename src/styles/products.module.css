@@ -1,0 +1,37 @@
+.ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.li {
+    list-style: none;
+    background-color: white;
+    color: goldenrod;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+    border-radius: 8px;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+}
+
+.detailPrice {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    background-color: goldenrod;
+    color: #fff;
+    border-radius: 5px;
+
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
