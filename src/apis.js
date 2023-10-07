@@ -5,4 +5,11 @@ async function getProducts() {
     return response;
 }
 
-export default getProducts;
+async function fetchProductDetails(productId) {
+    const res = await fetch(`https://fakestoreapi.com/products/${productId}`);
+    const json = await res.json();
+    return json;
+}
+
+
+export { getProducts, fetchProductDetails };
