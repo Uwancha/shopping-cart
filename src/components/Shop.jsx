@@ -1,5 +1,5 @@
 import React, { useState, useEffect, } from "react";
-import getProducts from "../apis";
+import {getProducts} from "../apis";
 import Products from "./Products";
 
 function Shop() {
