@@ -24,21 +24,33 @@
     justify-content: center;
     gap: 2rem;
     align-items: center;
+
+    color: tomato;
 }
 
-.button {
+.link {
     border: none;
-    background-color: goldenrod;
-    color: #fff;
+    background-color: rgba(230, 238, 240, 0.948);
+    color: tomato;
     border-radius: 5px;
 
     height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .2rem;
+    padding-bottom: 0;
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: transparent;
 }
 
 .addToCart {
-    background-color: tomato;
+    background-color: rgba(255, 99, 71, 0.841);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -49,5 +61,52 @@
 }
 
 .addToCart:hover {
-    background-color: rgba(255, 99, 71, 0.841);
+    background-color: tomato; 
+}
+
+.details {
+    width: 50%;
+    padding: 3rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    gap: 1rem;
+
+    background-color: #4ea6bc;
+}
+
+.h1 {
+    color: tomato;
+}
+
+.h2 {
+    color: tomato;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.descriptionText {
+    word-wrap: break-word;
+    max-width: 70%;
+    text-align: left;
+    color: ghostwhite;
+}
+
+.detailImage {
+    width: 70%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.rateCount {
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+    color: goldenrod;
 }
