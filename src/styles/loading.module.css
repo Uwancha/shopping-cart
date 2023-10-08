@@ -1,0 +1,25 @@
+.loading {
+    margin-top: 10rem;
+    margin-left: 45vw;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: solid 5px;
+
+    color: blue;
+    animation: load infinite 3s linear;
+}
+
+@keyframes load {
+    0% {
+        border-color: transparent;
+        
+      }
+      50% {
+        border-color: #4ea6bc;
+        
+      }
+      100% {
+        border-color: transparent;
+      }
+  }
