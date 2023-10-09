@@ -7,15 +7,13 @@ function Products({products}) {
 
     const memoizedProducts = useMemo(() => {
         return products;
-    }, [products]) 
+    }, [products])
 
   return (
     <ul className={styles.ul}>
         {memoizedProducts.length === 0 ? <Loading />: (
             memoizedProducts.map(product => (
-            <div>
                 <Product product={product} />
-            </div>
             )) 
         )}
     </ul>
