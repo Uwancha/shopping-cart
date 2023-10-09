@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import Product from "./Product";
 import styles from '../styles/products.module.css'
+import Loading from "./Loading";
 
 function Products({products}) {
 
@@ -10,7 +11,7 @@ function Products({products}) {
 
   return (
     <ul className={styles.ul}>
-        {memoizedProducts.length === 0 ? <h5>Loading...</h5>: (
+        {memoizedProducts.length === 0 ? <Loading />: (
             memoizedProducts.map(product => (
             <div>
                 <Product product={product} />
