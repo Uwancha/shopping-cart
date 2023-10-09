@@ -15,7 +15,7 @@ function Nav() {
             <div>
                 <Link className={styles.cart}>
                 <img src={cartIcon} className={styles.cartIcon} alt="shopping cart image by klimir art" />
-                <h5 className={styles.items}>{cart.length}</h5>
+                <h5 className={styles.items}>{cart.reduce((total, item) => total + item.quantity, 0)}</h5>
                 </Link>
             </div>
         </div>
