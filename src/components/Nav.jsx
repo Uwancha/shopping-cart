@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../CartContext";
 import cartIcon from "../assets/cart_3625090.png"
 import styles from "../styles/header.module.css"
 
 
 function Nav() {
+    const {cart} = useContext(CartContext);
+
     return (
         <>
         <div className={styles.header}>
             <h3>Your Online Store</h3>
             <div>
-                <Link>
+                <Link className={styles.cart}>
                 <img src={cartIcon} className={styles.cartIcon} alt="shopping cart image by klimir art" />
+                <h5 className={styles.items}>{cart.length}</h5>
                 </Link>
             </div>
         </div>
