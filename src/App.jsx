@@ -7,6 +7,7 @@ import Shop from "./components/Shop.jsx";
 import ErrorPage from "./components/ErrorPage.jsx"
 import ProductDetails from './components/ProductDetails.jsx';
 import './App.css';
+import Cart from './components/Cart.jsx';
 
 function App() {
 
@@ -26,6 +27,10 @@ function App() {
           <Route
             path="/shop/:productId"
             element={<ProductDetails />}
+          />
+          <Route 
+            path="/shop/cart"
+            element={<Cart />}
           />
         </Routes>
       </Router>
