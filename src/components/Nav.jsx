@@ -4,7 +4,7 @@ import cartIcon from "../assets/cart_3625090.png"
 import styles from "../styles/header.module.css"
 
 
-function Header() {
+function Nav() {
     return (
         <>
         <div className={styles.header}>
@@ -26,4 +26,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Nav;
