@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProductDetails } from "../apis";
 import styles from '../styles/products.module.css'
+import Loading from "./Loading";
 
 function ProductDetails() {
     const { productId } = useParams();
@@ -16,7 +17,7 @@ function ProductDetails() {
     }, [productId]);
   
     if (!product) {
-        return <h5>Loading...</h5>;
+        return <Loading />
     }
 
     console.log(product)
