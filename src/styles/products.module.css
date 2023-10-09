@@ -49,6 +49,12 @@
     background-color: transparent;
 }
 
+.addQuantity {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .addToCart {
     background-color: rgba(255, 99, 71, 0.841);
     color: #fff;
@@ -57,11 +63,35 @@
     font-size: x-large;
     padding: .5rem;
 
-    width: 90%;
+    width: 50%;
 }
 
 .addToCart:hover {
     background-color: tomato; 
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.quantity {
+    background-color: rgba(218, 165, 32, 0.502);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: x-large;
+    padding: .5rem;
+}
+
+.quantity:hover {
+    background-color: goldenrod;
+}
+
+.span {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .details {
