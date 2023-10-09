@@ -13,7 +13,7 @@ function Nav() {
         <div className={styles.header}>
             <h3>Your Online Store</h3>
             <div>
-                <Link className={styles.cart}>
+                <Link to="/shop/cart" className={styles.cart}>
                 <img src={cartIcon} className={styles.cartIcon} alt="shopping cart image by klimir art" />
                 <h5 className={styles.items}>{cart.reduce((total, item) => total + item.quantity, 0)}</h5>
                 </Link>
