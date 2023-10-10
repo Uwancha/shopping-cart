@@ -83,3 +83,16 @@
     margin-top: 10%;
     color: cadetblue;
 }
+
+.shopNowbtn {
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(255, 99, 71, 0.841);
+}
+
+.shopNowbtn:hover {
+    background-color: tomato;
+}
