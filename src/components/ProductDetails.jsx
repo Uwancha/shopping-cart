@@ -33,6 +33,16 @@ function ProductDetails() {
             
             <h2 className={styles.h2}>Description</h2>
             <p className={styles.descriptionText}>{product.description}</p>
+
+            <h2 className={styles.h2}>Shipping & Returns</h2>
+
+            <p className={styles.descriptionText}>
+                Free shipping. Standard shipping takes 3-5 business days. Express shipping available.
+            </p>
+
+            <p className={styles.descriptionText}>
+                We offer free 30-day returns. Simply return the item in its original condition within 30 days for a full refund.
+            </p>
         </li>
     )
 }
