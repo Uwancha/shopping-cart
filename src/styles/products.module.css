@@ -96,11 +96,12 @@
 }
 
 .details {
-    width: 50%;
+    width: 80%;
     padding: 3rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: .5rem;
     border-radius: 8px;
 
     display: flex;
@@ -109,7 +110,12 @@
     justify-content: stretch;
     gap: 1rem;
 
-    background-color: #4ea6bc;
+
+
+    background-color: white;
+    color: goldenrod;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
 }
 
 .h1 {
@@ -126,11 +132,12 @@
     word-wrap: break-word;
     max-width: 70%;
     text-align: left;
-    color: ghostwhite;
+    font-size: 18px;
+    color: rgb(97, 93, 93);
 }
 
 .detailImage {
-    width: 70%;
+    width: 50%;
     height: 400px;
     border-radius: 8px;
 }
