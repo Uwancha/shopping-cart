@@ -10,6 +10,17 @@ function Cart() {
         return total + item.price * item.quantity;
     }, 0);
 
+    const EmptyCart = () => {
+        return (
+            <div className={styles.emptyCart}>
+                <h2 className={styles.emptyCart}>No item added</h2>
+                <Link to="/shop" className={styles.link} >
+                    <button className={styles.shopNowbtn}>Shop Now</button>
+                </Link>
+            </div>
+        )
+    }
+
     return (
         <div className={styles.cartItems}>
             {cart.length > 0 && (
@@ -40,7 +51,7 @@ function Cart() {
             </>
             ) }
 
-            {cart.length === 0 && <h2 className={styles.emptyCart}>No item added</h2>}
+            {cart.length === 0 && <EmptyCart />}
         </div>
     )
 }
