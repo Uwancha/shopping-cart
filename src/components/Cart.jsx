@@ -40,7 +40,7 @@ function Cart() {
             </>
             ) }
 
-            {cart.length === 0 && <h4>Cart is empty</h4>}
+            {cart.length === 0 && <h2 className={styles.emptyCart}>No item added</h2>}
         </div>
     )
 }
