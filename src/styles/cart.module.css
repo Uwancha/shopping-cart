@@ -74,3 +74,8 @@
 
     width: 50%;
 }
+
+.emptyCart {
+    margin-top: 10%;
+    color: cadetblue;
+}
