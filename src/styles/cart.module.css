@@ -75,6 +75,10 @@
     width: 50%;
 }
 
+.checkoutbtn:hover {
+    background-color: tomato;
+}
+
 .emptyCart {
     margin-top: 10%;
     color: cadetblue;
