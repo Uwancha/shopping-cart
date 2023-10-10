@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 6rem;
+    padding: 1rem 6rem;
 
     background-color: #4ea6bc;
     color: #fff;
@@ -31,20 +31,24 @@
 }
 
 .cartIcon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     align-self: center;
 }
 
 .cart {
     display: flex;
+    flex-direction: column-reverse;
     text-decoration: none;
-    color: goldenrod;
+    color: #fff;
 }
 
 .items {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
+
+    border: solid #fff 2px;
+    border-radius: 50%;
 }
