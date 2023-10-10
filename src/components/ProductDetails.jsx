@@ -9,7 +9,6 @@ function ProductDetails() {
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
-        console.log("productId:", productId);
         fetchProductDetails(productId).then(data => {
             setProduct(data)
         })
@@ -19,8 +18,6 @@ function ProductDetails() {
     if (!product) {
         return <Loading />
     }
-
-    console.log(product)
     
     return (
         <li className={styles.details}>
