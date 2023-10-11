@@ -47,7 +47,7 @@ function Cart() {
 
                 <p className={styles.total}>Total: ${totalPrice}</p>
 
-                <button className={styles.checkoutbtn}>Checkout</button>
+                <Link to="/shop/checkout" className={styles.checkoutbtn}>Checkout</Link>
             </>
             ) }
 
