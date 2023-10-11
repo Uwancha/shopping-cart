@@ -8,6 +8,7 @@ import ErrorPage from "./components/ErrorPage.jsx"
 import ProductDetails from './components/ProductDetails.jsx';
 import './App.css';
 import Cart from './components/Cart.jsx';
+import Checkout from './components/Checkout.jsx';
 
 function App() {
 
@@ -31,6 +32,10 @@ function App() {
           <Route 
             path="/shop/cart"
             element={<Cart />}
+          />
+          <Route
+            path="/shop/checkout"
+            element={<Checkout />}
           />
         </Routes>
       </Router>
