@@ -1,0 +1,13 @@
+.sliderContainer {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    padding: 0 2rem;
+
+    margin-top: 5rem;
+}
+
+.image {
+    width: 300px;
+    height: 400px;
+}
