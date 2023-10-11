@@ -1,5 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+}
+
 .home {
-    width: 100%;
+    
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
@@ -64,6 +72,8 @@
     font-weight: 500;
     animation: backround infinite 7s linear;
 }
+
+
 
 @keyframes backround {
     0% {
