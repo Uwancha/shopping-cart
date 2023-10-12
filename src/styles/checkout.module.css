@@ -1,0 +1,108 @@
+.formContainer {
+    width: 800px;
+    margin: 2rem auto;
+
+}
+
+.form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    
+
+    gap: 3rem;
+}
+
+.basicInfo  {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    color: goldenrod;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+    border-radius: 8px;
+
+    padding: 1rem;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    color: goldenrod;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+    border-radius: 8px;
+
+    padding: 1rem;
+}
+
+.childs {
+    display: flex;
+    justify-content: flex-start;
+
+    gap: 1rem;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+    gap: .5rem;
+}
+
+.cvv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cvvinput {
+    height: 20px;
+    width: 50%;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #f3f4f6;
+}
+
+.cvvinput:focus {
+    outline: none;
+    border: cadetblue solid 1px;
+}
+
+
+.input {
+    height: 20px;
+    width: 70%;
+    margin-left: auto;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #f3f4f6;
+}
+
+.input:focus {
+    outline: none;
+    border: cadetblue solid 1px;
+}
+
+.button {
+    background-color: rgba(255, 99, 71, 0.841);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: x-large;
+    padding: .5rem;
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.button:hover {
+    background-color: tomato;
+}
