@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "../styles/checkout.module.css"
 
 function Checkout() {
     const [firstName, setFirstName] = useState("");
@@ -26,91 +27,111 @@ function Checkout() {
     };
 
     return (
-        <div>
-            <h1>Checkout</h1>
-            <form onSubmit={handleFormSubmit}>
-                <label>
-                    First Name:
-                    <input
-                        type="text"
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Last Name:
-                    <input
-                        type="text"
-                        value={lastName}
-                        onChange={(e) => setLastName(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Email:
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Address:
-                    <input
-                        type="text"
-                        value={address}
-                        onChange={(e) => setAddress(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    City:
-                    <input
-                        type="text"
-                        value={city}
-                        onChange={(e) => setCity(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Postal Code:
-                    <input
-                        type="text"
-                        value={postalCode}
-                        onChange={(e) => setPostalCode(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Card Number:
-                    <input
-                        type="text"
-                        value={cardNumber}
-                        onChange={(e) => setCardNumber(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Expiry Date:
-                    <input
-                        type="text"
-                        value={expiryDate}
-                        onChange={(e) => setExpiryDate(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    CVV:
-                    <input
-                        type="text"
-                        value={cvv}
-                        onChange={(e) => setCVV(e.target.value)}
-                        required
-                      />
-                </label>
-                <button type="submit">Place Order</button>
+        <div className={styles.formContainer}>
+            <form onSubmit={handleFormSubmit} className={styles.form}>
+                <div className={styles.basicInfo}>
+                    <div className={styles.childs}>
+                        <label className={styles.label}>
+                            <h4>First Name:</h4>
+                            <input
+                                type="text"
+                                value={firstName}
+                                onChange={(e) => setFirstName(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                        <label className={styles.label}>
+                            <h4>Last Name:</h4>
+                            <input
+                                type="text"
+                                value={lastName}
+                                onChange={(e) => setLastName(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                    </div>
+                    <div className={styles.childs}>
+                        <label className={styles.label}>
+                            <h4>Email:</h4>
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                        <label className={styles.label}>
+                            <h4>Address:</h4>
+                            <input
+                                type="text"
+                                value={address}
+                                onChange={(e) => setAddress(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                    </div>
+                    <div className={styles.childs}>
+                        <label className={styles.label}>
+                            <h4>City:</h4>
+                            <input
+                                type="text"
+                                value={city}
+                                onChange={(e) => setCity(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                        <label className={styles.label}>
+                            <h4>Postal Code:</h4>
+                            <input
+                                type="text"
+                                value={postalCode}
+                                onChange={(e) => setPostalCode(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                    </div>
+                </div>
+                <div className={styles.cardInfo}>
+                    <div className={styles.childs}>
+                        <label className={styles.label}>
+                            <h4>Card Number:</h4>
+                            <input
+                                type="text"
+                                value={cardNumber}
+                                onChange={(e) => setCardNumber(e.target.value)}
+                                required
+                                className={styles.input}
+                            />
+                        </label>
+                        <label className={styles.label}>
+                            <h4>Expiry Date:</h4>
+                            <input
+                                type="text"
+                                value={expiryDate}
+                                onChange={(e) => setExpiryDate(e.target.value)}
+                                required
+                                className={styles.input }
+                            />
+                        </label>
+                    </div>
+                    <label className={styles.cvv}>
+                        <h4>CVV:</h4>
+                        <input
+                            type="text"
+                            value={cvv}
+                            onChange={(e) => setCVV(e.target.value)}
+                            required
+                            className={styles.cvvinput }
+                          />
+                    </label>
+                </div>
+                <button type="submit" className={styles.button}>Place Order</button>
             </form>
         </div>
     );
