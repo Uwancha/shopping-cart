@@ -52,3 +52,19 @@
     border: solid #fff 2px;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .cartIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .items {
+        font-size: 16px;
+        border: solid #fff 1px;
+    }
+}
