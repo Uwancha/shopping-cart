@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    padding-right: 1rem;
 }
 
 .li {
@@ -147,4 +149,18 @@
     gap: 2rem;
     font-size: 20px;
     color: goldenrod;
+}
+
+@media (max-width: 992px) {
+    .ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ul {
+        grid-template-columns: repeat(1, 1fr);
+        padding-right: 1rem;
+    }
 }
