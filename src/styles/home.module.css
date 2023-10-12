@@ -111,11 +111,11 @@
 
     .callToaction {
         gap: .5rem;
+        padding-right: .5rem;
     }
 
     .ctaMessage {
         font-size: 16px;
-
     }
 
     .button {
