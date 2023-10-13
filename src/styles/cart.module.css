@@ -71,6 +71,7 @@
     font-weight: 600;
     padding: .5rem;
     cursor: pointer;
+    text-decoration: none;
 
     width: 50%;
 }
