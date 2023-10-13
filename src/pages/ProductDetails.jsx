@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProductDetails } from "../apis";
 import styles from '../styles/products.module.css'
-import Loading from "./Loading";
+import Loading from "../components/Loading";
 
 function ProductDetails() {
     const { productId } = useParams();

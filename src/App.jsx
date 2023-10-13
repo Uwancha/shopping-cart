@@ -2,13 +2,13 @@ import React from 'react';
 import { CartProvider } from './CartContext.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from "./components/Nav.jsx";
-import Home from "./components/Home.jsx";
-import Shop from "./components/Shop.jsx";
-import ErrorPage from "./components/ErrorPage.jsx"
-import ProductDetails from './components/ProductDetails.jsx';
+import Home from "./pages/Home.jsx";
+import Shop from "./pages/Shop.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx"
+import ProductDetails from './pages/ProductDetails.jsx';
 import './App.css';
-import Cart from './components/Cart.jsx';
-import Checkout from './components/Checkout.jsx';
+import Cart from './pages/Cart.jsx';
+import Checkout from './pages/Checkout.jsx';
 
 function App() {
 
