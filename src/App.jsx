@@ -9,6 +9,7 @@ import ProductDetails from './pages/ProductDetails.jsx';
 import './App.css';
 import Cart from './pages/Cart.jsx';
 import Checkout from './pages/Checkout.jsx';
+import Contact from './pages/About.jsx';
 
 function App() {
 
@@ -36,6 +37,10 @@ function App() {
           <Route
             path="/shop/checkout"
             element={<Checkout />}
+          />
+          <Route 
+          path='/contact'
+          element={<Contact />}
           />
         </Routes>
       </Router>
