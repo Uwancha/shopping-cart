@@ -177,6 +177,10 @@
         padding-left: 1rem;
     }
 
+    .li {
+        padding: 1rem 0;
+    }
+
     .h1 {
         width: 100%;
         font-size: 16px;
