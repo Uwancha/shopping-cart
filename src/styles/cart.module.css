@@ -97,3 +97,33 @@
 .shopNowbtn:hover {
     background-color: tomato;
 }
+
+@media (max-width: 992px) {
+    .removebtn {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .titlePrice {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cart {
+        flex-direction: column;
+        border-radius: 12px;
+        border: solid red 3px;
+    }
+
+    .titlePrice {
+        flex: 1;
+        padding-left: 2rem;
+        font-size: 16px;
+    }
+
+    .removebtn {
+        width: 100%;
+    }
+}
