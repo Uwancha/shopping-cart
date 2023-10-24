@@ -6,8 +6,7 @@
     
 }
 
-.home {
-    
+.home { 
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
@@ -92,7 +91,12 @@
 
 @media (max-width: 992px) {
     .container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .home {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }
 
