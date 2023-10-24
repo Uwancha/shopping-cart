@@ -9,7 +9,7 @@ import ProductDetails from './pages/ProductDetails.jsx';
 import './App.css';
 import Cart from './pages/Cart.jsx';
 import Checkout from './pages/Checkout.jsx';
-import Contact from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
 
 function App() {
 
