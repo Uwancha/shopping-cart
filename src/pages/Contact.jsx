@@ -7,12 +7,19 @@ import linkedinIcon from "../assets/linkedin_145807.png";
 import twitterIcon from "../assets/twitter_3670151.png";
 
 function Contact() {
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+    };
+
     
     return (
         <div className={styles.contact}>
-            <h4>Contact Us</h4>
-
-            <p>We're here to help with any questions you have about our products, services or company. Please get in touch!</p>
+            <div className={styles.contents}>
+                <h4>Contact Us</h4>
+                <p>We're here to help with any questions you have about our products, services or company. Please get in touch!</p>
+            </div>
 
             <div className={styles.subSection}>
                 <div>
@@ -36,11 +43,12 @@ function Contact() {
                 </div>
                 <div>
                     <h4>Email</h4>
-                    <p>support@yourstore.com</p>
+                    <p>support@onlinestore.com</p>
+                    <p>helpcenter@onlinestore.com</p>
                 </div>
             </div>
 
-            <div>
+            <div className={styles.contents}>
                 <h4>Social Media</h4>
                 <div className={styles.icons}>
                     <img src={igIcon} alt="instagram logo" className={styles.img} />
@@ -51,20 +59,26 @@ function Contact() {
             </div>
 
 
-            <div>
+            <div className={styles.contents}>
                 <h4>Customer Service</h4>
                 <p>For account help, order inquiries or returns, please contact our customer service team.</p>
             </div>
 
             <div>
                 <h4>Send us a Message</h4>
-                <form className={styles.form}>
-                    <label for="name">Name:</label>
+                <form onSubmit={handleFormSubmit} className={styles.form}>
+                    <label for="name">
+                        <h4>Name:</h4>
                     <input type="text" id="name" />
-                    <label for="email">Email:</label>
+                    </label>
+                    <label for="email">
+                        <h4>Email:</h4>
                     <input type="email" id="email" />
-                    <label for="message">Message:</label>
+                    </label>
+                    <label for="message">
+                        <h4>Message:</h4>
                     <textarea id="message"></textarea>
+                    </label>
                     <input type="submit" value="Submit" />
                 </form>
             </div>
